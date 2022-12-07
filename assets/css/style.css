@@ -10,6 +10,32 @@ html {
     font-family: 'Epilogue', sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
+nav {
+    position:fixed;
+    right:0;
+    width: 240px;
+    height:100vh;
+    background-color: #FFFFFF;
+}
+
+button {
+    position:fixed;
+    top:0;
+    right:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainnavcontainer {
+    display:none;
+}
+
 .dropdown::after {
     content: url("../images/icon-arrow-down.svg");
     margin-left:16px;
@@ -17,6 +43,11 @@ html {
 
 #features::after {
     margin-left:19px;
+}
+
+.expanded::after {
+    content: url("../images/icon-arrow-up.svg");
+    margin-left:16px;
 }
 
 .dropdownlist {
