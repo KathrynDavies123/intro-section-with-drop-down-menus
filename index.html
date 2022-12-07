@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="dropdown" id="features">Features</a>
+          <ul class="dropdownlist" id="dropdownfeatures">
+            <li>
+              <img src="./assets/images/icon-todo.svg" aria-hidden="true" />
+              <a href="#">Todo List</a>
+            </li>
+            <li>
+              <img src="./assets/images/icon-calendar.svg" aria-hidden="true" />
+              <a href="#">Calendar</a>
+            </li>
+            <li>
+              <img
+                src="./assets/images/icon-reminders.svg"
+                aria-hidden="true"
+              />
+              <a href="#">Reminders</a>
+            </li>
+            <li>
+              <img src="./assets/images/icon-planning.svg" aria-hidden="true" />
+              <a href="#">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="dropdown" id="company">Company</a>
+          <ul class="dropdownlist" id="dropdowncompany">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
+      <div class="loginregister">
+        <a href="#">Login</a>
+        <a href="#" class="register">Register</a>
+      </div>
+    </nav>
+    <!-- 
   Features
   Company
   Careers
@@ -30,10 +71,7 @@
   create team rituals, and watch productivity soar.
 
   Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+   -->
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
