@@ -13,11 +13,13 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <nav>
+    <div class="backgroundcolor"></div>
+    <img src="./assets/images/logo.svg" alt="snap logo" class="logo" />
+    <nav class="mainnavcontainer">
       <button class="menubutton">
         <img src="./assets/images/icon-menu.svg" alt="menu button" />
       </button>
-      <div class="mainnavcontainer"><ul>
+      <ul class="mainnavlist">
         <li>
           <a href="#" class="dropdown" id="features">Features</a>
           <ul class="dropdownlist" id="dropdownfeatures">
@@ -56,10 +58,28 @@
 
       <div class="loginregister">
         <a href="#">Login</a>
-        <a href="#" class="register">Register</a>
+        <button class="register">Register</button>
       </div>
-    </div>
     </nav>
+    <main>
+      <section>
+        <div class="imagecontainer"></div>
+        <article>
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="learnmore">Learn more</button>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <img src="./assets/images/client-databiz.svg" alt="databiz logo">
+      <img src="./assets/images/client-audiophile.svg" alt="audiophile logo">
+      <img src="./assets/images/client-meet.svg" alt="meet logo">
+      <img src="./assets/images/client-maker.svg" alt="maker logo">
+    </footer>
     <!-- 
   Features
   Company
