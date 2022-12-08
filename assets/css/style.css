@@ -10,6 +10,10 @@ html {
   font-family: "Epilogue", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -56,10 +60,14 @@ nav {
 
 .menubutton {
   position: fixed;
-  top: 16px;
-  right: 16px;
+  top: 2%;
+  right: 4%;
   background-color: #ffffff;
   border: none;
+}
+
+.menubutton:hover {
+  cursor: pointer;
 }
 
 .mainnavlist {
@@ -161,6 +169,9 @@ a:hover {
 
 main {
   margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .imagecontainer {
@@ -178,6 +189,7 @@ article {
   align-items: center;
   height: 208px;
   margin: 48px 16px;
+  max-width: 450px;
 }
 
 h1 {
@@ -196,6 +208,7 @@ p {
 }
 
 .learnmore {
+  font-family: "Epilogue", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
@@ -242,4 +255,171 @@ footer img:nth-of-type(3) {
 footer img:nth-of-type(4) {
   width: 58.9px;
   height: 17.23px;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    margin: 38px;
+  }
+
+  .menubutton {
+    top: 4%;
+    right: 12%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  body,
+  nav,
+  .register {
+    background-color: #fafafa;
+  }
+
+  body {
+    overflow-y: hidden;
+  }
+
+  .backgroundcolor {
+    display: none;
+  }
+
+  .menubutton {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    max-width: 100%;
+    height: 42px;
+    position: static;
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 21px 40px 0 187px;
+    padding: 0;
+    transition: none;
+  }
+
+  .mainnavlist {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 13px;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dropdown::after {
+    margin-left: 9px;
+  }
+
+  #features::after {
+    margin-left: 8px;
+  }
+
+  .dropdownlist {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    margin: 24px 0 24px 23px;
+  }
+
+  .dropdownlist {
+    display: none;
+    flex-direction: column;
+  }
+
+  .loginregister {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .register {
+    width: 104px;
+  }
+
+  main {
+    flex-direction: row-reverse;
+    margin: 67px 0;
+    justify-content: center;
+    width: 100%;
+    gap: 20%;
+  }
+
+  article {
+    margin: 0;
+    height: 100%;
+    max-width: 540px;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+    text-align: left;
+    letter-spacing: -1.11111px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .learnmore {
+    width: 163px;
+    height: 56px;
+    padding: 15px 30px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    align-self: start;
+  }
+
+  .imagecontainer {
+    background-image: url("../images/image-hero-desktop.png");
+    width: 480px;
+    height: 640px;
+  }
+
+  footer {
+    width: 477.63px;
+    height: 35.9px;
+  }
+
+  footer img {
+    width: 113.14px;
+    height: 20px;
+  }
+
+  footer img:nth-of-type(2) {
+    width: 73px;
+    height: 35.9px;
+  }
+
+  footer img:nth-of-type(3) {
+    width: 89.31px;
+    height: 20px;
+  }
+
+  footer img:nth-of-type(4) {
+    width: 82.01px;
+    height: 24px;
+  }
+}
+
+@media (min-width:1350px) {
+  footer {
+    margin-left:1%;
+  }
 }
