@@ -10,6 +10,15 @@ html {
   font-family: "Epilogue", sans-serif;
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .logo {
   margin: 16px;
 }
@@ -33,8 +42,9 @@ html {
 nav {
   position: fixed;
   top: 0;
-  right: -240px;
-  width: 240px;
+  right: -64%;
+  width: 64%;
+  max-width: 400px;
   height: 100vh;
   background-color: #ffffff;
   display: flex;
@@ -72,6 +82,9 @@ ul {
 .dropdownlist li {
   display: flex;
   gap: 16px;
+  animation: fadein;
+  animation-timing-function: ease;
+  animation-duration: 1s;
 }
 
 .dropdownlist img {
@@ -85,6 +98,10 @@ a {
   font-size: 16px;
   line-height: 26px;
   color: #686868;
+}
+
+a:hover {
+  color: #151515;
 }
 
 .open {
@@ -119,6 +136,10 @@ a {
   color: #686868;
 }
 
+.loginregister a:hover {
+  color: #151515;
+}
+
 .register {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
@@ -132,6 +153,48 @@ a {
   background-color: #ffffff;
 }
 
+.register:hover {
+  color: #151515;
+  border: 1.5px solid #151515;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 24px;
+}
+
+.imagecontainer {
+  width: 375px;
+  height: 281.25px;
+  background-image: url("../images/image-hero-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 208px;
+  margin: 48px 16px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+
+p {
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: #686868;
+}
+
 .learnmore {
   font-weight: 700;
   font-size: 16px;
@@ -141,7 +204,42 @@ a {
   color: #fafafa;
   background: #151515;
   border-radius: 15px;
-  border:none;
-  width:136px;
-  height:48px;
+  border: none;
+  width: 136px;
+  height: 48px;
+}
+
+.learnmore:hover {
+  color: #151515;
+  border: 1px solid #151515;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+footer img {
+  width: 81.25px;
+  height: 14.36px;
+}
+
+footer img:nth-of-type(2) {
+  width: 52.87px;
+  height: 26px;
+}
+
+footer img:nth-of-type(3) {
+  width: 64.14px;
+  height: 14.36px;
+}
+
+footer img:nth-of-type(4) {
+  width: 58.9px;
+  height: 17.23px;
 }
