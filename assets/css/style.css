@@ -187,7 +187,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 208px;
+  height: 282px;
   margin: 48px 16px;
   max-width: 450px;
 }
@@ -229,30 +229,31 @@ p {
   cursor: pointer;
 }
 
-footer {
+.footer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 28px;
+  margin-top:48px;
 }
 
-footer img {
+.footer img {
   width: 81.25px;
   height: 14.36px;
 }
 
-footer img:nth-of-type(2) {
+.footer img:nth-of-type(2) {
   width: 52.87px;
   height: 26px;
 }
 
-footer img:nth-of-type(3) {
+.footer img:nth-of-type(3) {
   width: 64.14px;
   height: 14.36px;
 }
 
-footer img:nth-of-type(4) {
+.footer img:nth-of-type(4) {
   width: 58.9px;
   height: 17.23px;
 }
@@ -349,17 +350,18 @@ footer img:nth-of-type(4) {
 
   main {
     flex-direction: row-reverse;
-    margin: 67px 0;
+    margin-top:67px;
+    height: 640px;
     justify-content: center;
     width: 100%;
-    gap: 20%;
+    gap: 125px;
   }
 
   article {
     margin: 0;
     height: 100%;
-    max-width: 540px;
-    justify-content: flex-start;
+    max-width: 520px;
+    justify-content: flex-end;
     gap: 50px;
   }
 
@@ -374,6 +376,8 @@ footer img:nth-of-type(4) {
     font-size: 18px;
     line-height: 28px;
     text-align: left;
+    width:445px;
+    align-self: flex-start;
   }
 
   .learnmore {
@@ -392,34 +396,37 @@ footer img:nth-of-type(4) {
     height: 640px;
   }
 
-  footer {
+  .footer {
     width: 477.63px;
     height: 35.9px;
+    margin-top:58px;
+    align-self: flex-start;
+    justify-content: flex-start;
   }
 
-  footer img {
+  .footer img {
     width: 113.14px;
     height: 20px;
   }
 
-  footer img:nth-of-type(2) {
+  .footer img:nth-of-type(2) {
     width: 73px;
     height: 35.9px;
   }
 
-  footer img:nth-of-type(3) {
+  .footer img:nth-of-type(3) {
     width: 89.31px;
     height: 20px;
   }
 
-  footer img:nth-of-type(4) {
+  .footer img:nth-of-type(4) {
     width: 82.01px;
     height: 24px;
   }
 }
 
-@media (min-width:1350px) {
-  footer {
-    margin-left:1%;
+@media (min-width:1600px) {
+  main {
+    gap:400px;
   }
 }
